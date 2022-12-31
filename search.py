@@ -1,6 +1,5 @@
-# Author: Phoebe Lo
-# Email: tsaichenlo@umass.edu
-# Spire ID: 33642075
+# Author: Alexandra Yang
+# Email: shiuanyang122@gmail.com
 
 import urllib.request
 import string
