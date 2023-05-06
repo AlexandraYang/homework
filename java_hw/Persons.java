@@ -23,15 +23,13 @@ public class Persons {
     public int getSize() {
         return arrylist.size();
     }
-    
-    public Persons search(ArrayList<Person> arrylist, String letter) {
-        Persons personsWhoMatch = new Persons();
+
+    public void search(ArrayList<Person> arrylist, String letter) {
         for (Person p: arrylist){
             if (p.getName().compareTo(letter) == 0) {
-                personsWhoMatch.add(p);
+                System.out.println(p.toString());
             }
-        } 
-        return personsWhoMatch;
+        }
     }
 
 public static void main(String[] args){
@@ -41,8 +39,8 @@ public static void main(String[] args){
     ArrayList<Person> arraylist1 = pp.getArrayList();
     arraylist1.add(p1);
     arraylist1.add(p2);
-    for (int i = 0; i < pp.getSize(); i += 1) { 
-        System.out.println(arraylist1.get(i).getName());		
-        }  
+    for (int i = 0; i < pp.getSize(); i += 1) {
+        System.out.println(arraylist1.get(i).getName());
+        }
     }
 }
